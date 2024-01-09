@@ -25,7 +25,7 @@ console.log=(sconto40)
 
 // ### calcolo il prezzo REALE del biglietto
 
-let priceticket = 0;
+let priceticket = partialticket;
 
 if (age < 18) {
     priceticket = partialticket - sconto20;
@@ -33,7 +33,7 @@ if (age < 18) {
     priceticket = partialticket - sconto40;
 }
 
-document.getElementById ('prezzo').innerHTML = ticket;
+document.getElementById ('ticket').innerHTML = priceticket.toFixed(2);
 
 
 
